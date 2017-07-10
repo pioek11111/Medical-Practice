@@ -1,0 +1,22 @@
+﻿@model IEnumerable<MedicalPractice.Domain.Entities.Doctor>
+
+@{
+    ViewBag.Title = "Lekarze";
+}
+
+<style>
+    h2 {
+        text-align: center;        
+    }
+</style>
+
+<h2>Nasi Lekarze</h2>
+@foreach(var l in Model)
+{
+    <div class="list-group-item">
+        <p>@l.Name @l.Surname - @l.Specjalization</p>
+    </div>
+}
+
+
+

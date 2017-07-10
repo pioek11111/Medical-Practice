@@ -1,0 +1,5 @@
+C:\Users\Piotrek\Desktop\Medical-practice\MedicalPractice.Domain\bin\Debug\MedicalPractice.Domain.dll
+C:\Users\Piotrek\Desktop\Medical-practice\MedicalPractice.Domain\bin\Debug\MedicalPractice.Domain.pdb
+C:\Users\Piotrek\Desktop\Medical-practice\MedicalPractice.Domain\obj\Debug\MedicalPractice.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Piotrek\Desktop\Medical-practice\MedicalPractice.Domain\obj\Debug\MedicalPractice.Domain.dll
+C:\Users\Piotrek\Desktop\Medical-practice\MedicalPractice.Domain\obj\Debug\MedicalPractice.Domain.pdb
