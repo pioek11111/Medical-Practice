@@ -1,0 +1,14 @@
+﻿@model MedicalPractice.Domain.Entities.Doctor
+
+<div class="list-group-item">
+    <p>@Model.Name @Model.Surname - @Model.Specjalization</p>
+    @using (Html.BeginForm("Order", "VisitOrder"))
+    {
+        <div class="pull-right">
+            @*@Html.HiddenFor(x => x)*@
+            @Html.Hidden("d", Model)
+            @Html.Hidden("returnUrl", Request.Url.PathAndQuery)
+            <input type="submit" class="btn btn-success" value="Umów wizytę" />
+        </div>
+    }
+</div>
