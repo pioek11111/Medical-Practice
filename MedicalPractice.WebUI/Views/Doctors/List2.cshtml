@@ -1,0 +1,25 @@
+﻿@using MedicalPractice.Domain.Entities;
+@model IEnumerable<Doctor>
+
+@{
+    ViewBag.Title = "List2";
+}
+
+<h2>List2</h2>
+
+<style>
+    h2 {
+        text-align: center;
+    }
+
+    .button-right {
+        margin-left: 900px;
+    }
+</style>
+
+<h2>Nasi Lekarze</h2>
+
+@foreach (var l in Model)
+{
+    @Html.Partial("DoctorSummary", l);
+}

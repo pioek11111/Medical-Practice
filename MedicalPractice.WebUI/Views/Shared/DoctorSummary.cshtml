@@ -1,12 +1,22 @@
 ﻿@model MedicalPractice.Domain.Entities.Doctor
+@using MedicalPractice.WebUI.Controllers;
+
+<style>
+    input {
+        position: absolute;
+        top: 10px;
+        left: 90%;
+    }
+</style>
 
 <div class="list-group-item">
-    <p>@Model.Name @Model.Surname - @Model.Specjalization</p>
-    @using (Html.BeginForm("Order", "VisitOrder"))
+    <p> @Model.Name @Model.Surname - @Model.Specjalization</p>
+    @using (Html.BeginForm("Index", "VisitOrder"))
     {
         <div class="pull-right">
-            @*@Html.HiddenFor(x => x)*@
-            @Html.Hidden("d", Model)
+            @Html.Hidden("name", Model.Name ) 
+            @Html.Hidden("surname", Model.Surname)
+            @Html.Hidden("id", Model.DoctorID)
             @Html.Hidden("returnUrl", Request.Url.PathAndQuery)
             <input type="submit" class="btn btn-success" value="Umów wizytę" />
         </div>

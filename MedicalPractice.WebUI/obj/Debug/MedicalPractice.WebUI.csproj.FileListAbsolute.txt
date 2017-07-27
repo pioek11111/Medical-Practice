@@ -91,7 +91,6 @@ C:\Users\Piotrek\Desktop\Medical-practice\Medical-Practice\MedicalPractice.WebUI
 C:\Users\Piotrek\Desktop\Medical-practice\Medical-Practice\MedicalPractice.WebUI\bin\roslyn\vbc.rsp
 C:\Users\Piotrek\Desktop\Medical-practice\Medical-Practice\MedicalPractice.WebUI\bin\roslyn\VBCSCompiler.exe
 C:\Users\Piotrek\Desktop\Medical-practice\Medical-Practice\MedicalPractice.WebUI\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\Piotrek\Desktop\Medical-practice\Medical-Practice\MedicalPractice.WebUI\bin\MedicalPractice.WebUI.dll.config
 C:\Users\Piotrek\Desktop\Medical-practice\Medical-Practice\MedicalPractice.WebUI\bin\MedicalPractice.WebUI.dll
 C:\Users\Piotrek\Desktop\Medical-practice\Medical-Practice\MedicalPractice.WebUI\bin\MedicalPractice.WebUI.pdb
 C:\Users\Piotrek\Desktop\Medical-practice\Medical-Practice\MedicalPractice.WebUI\bin\MedicalPractice.Domain.dll
@@ -132,3 +131,9 @@ C:\Users\Piotrek\Desktop\Medical-practice\Medical-Practice\MedicalPractice.WebUI
 C:\Users\Piotrek\Desktop\Medical-practice\Medical-Practice\MedicalPractice.WebUI\obj\Debug\MedicalPractice.WebUI.csprojResolveAssemblyReference.cache
 C:\Users\Piotrek\Desktop\Medical-practice\Medical-Practice\MedicalPractice.WebUI\obj\Debug\MedicalPractice.WebUI.dll
 C:\Users\Piotrek\Desktop\Medical-practice\Medical-Practice\MedicalPractice.WebUI\obj\Debug\MedicalPractice.WebUI.pdb
+C:\Users\Piotrek\Desktop\Medical-practice\Medical-Practice\MedicalPractice.WebUI\bin\EntityFramework.dll
+C:\Users\Piotrek\Desktop\Medical-practice\Medical-Practice\MedicalPractice.WebUI\bin\EntityFramework.SqlServer.dll
+C:\Users\Piotrek\Desktop\Medical-practice\Medical-Practice\MedicalPractice.WebUI\bin\MedicalPractice.Domain.dll.config
+C:\Users\Piotrek\Desktop\Medical-practice\Medical-Practice\MedicalPractice.WebUI\bin\EntityFramework.xml
+C:\Users\Piotrek\Desktop\Medical-practice\Medical-Practice\MedicalPractice.WebUI\bin\EntityFramework.SqlServer.xml
+C:\Users\Piotrek\Desktop\Medical-practice\Medical-Practice\MedicalPractice.WebUI\bin\MedicalPractice.WebUI.dll.config

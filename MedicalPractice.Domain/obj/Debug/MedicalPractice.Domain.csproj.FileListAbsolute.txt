@@ -3,3 +3,13 @@ C:\Users\Piotrek\Desktop\Medical-practice\MedicalPractice.Domain\bin\Debug\Medic
 C:\Users\Piotrek\Desktop\Medical-practice\MedicalPractice.Domain\obj\Debug\MedicalPractice.Domain.csprojResolveAssemblyReference.cache
 C:\Users\Piotrek\Desktop\Medical-practice\MedicalPractice.Domain\obj\Debug\MedicalPractice.Domain.dll
 C:\Users\Piotrek\Desktop\Medical-practice\MedicalPractice.Domain\obj\Debug\MedicalPractice.Domain.pdb
+C:\Users\Piotrek\Desktop\Medical-practice\Medical-Practice\MedicalPractice.Domain\bin\Debug\MedicalPractice.Domain.dll.config
+C:\Users\Piotrek\Desktop\Medical-practice\Medical-Practice\MedicalPractice.Domain\bin\Debug\MedicalPractice.Domain.dll
+C:\Users\Piotrek\Desktop\Medical-practice\Medical-Practice\MedicalPractice.Domain\bin\Debug\MedicalPractice.Domain.pdb
+C:\Users\Piotrek\Desktop\Medical-practice\Medical-Practice\MedicalPractice.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Piotrek\Desktop\Medical-practice\Medical-Practice\MedicalPractice.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Piotrek\Desktop\Medical-practice\Medical-Practice\MedicalPractice.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Piotrek\Desktop\Medical-practice\Medical-Practice\MedicalPractice.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Piotrek\Desktop\Medical-practice\Medical-Practice\MedicalPractice.Domain\obj\Debug\MedicalPractice.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Piotrek\Desktop\Medical-practice\Medical-Practice\MedicalPractice.Domain\obj\Debug\MedicalPractice.Domain.dll
+C:\Users\Piotrek\Desktop\Medical-practice\Medical-Practice\MedicalPractice.Domain\obj\Debug\MedicalPractice.Domain.pdb

@@ -15,14 +15,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>@ViewBag.Title</title>
+    <style>
+        img {
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <div class="wrapper">
-        
+    <div class="wrapper">        
         <div class="container">
-            <nav>
-                <p>menu nawigacji</p>
+            <img src="~/dr_with_stethoscope-optimized.jpg" />
+            <nav class="navbar navbar-default">
+                @Html.Action("Menu", "Nav")
             </nav>
+            @*<nav id="categories" class="col-xs-3">                
+                
+            </nav>*@
             <div class="list-group">
                 @RenderBody()
             </div>

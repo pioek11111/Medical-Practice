@@ -1,4 +1,5 @@
-﻿@model IEnumerable<MedicalPractice.Domain.Entities.Doctor>
+﻿@using MedicalPractice.Domain.Entities;
+@model IEnumerable<Doctor>
 
 @{
     ViewBag.Title = "Lekarze";
@@ -16,8 +17,8 @@
 </style>
 
 <h2>Nasi Lekarze</h2>
+<h2></h2>
 @foreach (var l in Model)
 {
     @Html.Partial("DoctorSummary", l);
-    
 }
