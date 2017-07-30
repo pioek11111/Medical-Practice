@@ -16,7 +16,7 @@ namespace MedicalPractice.WebUI.Controllers
 
         public ViewResult Index(string name, string surname, int id, string returnUrl)
         {
-            return View(new Model1 { Name = name, Surname  = "grtg", Id = id});
+            return View(new Model1 { Name = name, Surname  = surname, Id = id});
         }
     }
 

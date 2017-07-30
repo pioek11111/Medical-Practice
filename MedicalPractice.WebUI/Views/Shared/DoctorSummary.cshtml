@@ -10,12 +10,12 @@
 </style>
 
 <div class="list-group-item">
-    <p> @Model.Name @Model.Surname - @Model.Specjalization</p>
+    <p> @Model.Name @Model.Surname  @Model.Specjalization</p>
     @using (Html.BeginForm("Index", "VisitOrder"))
     {
         <div class="pull-right">
-            @Html.Hidden("name", Model.Name ) 
-            @Html.Hidden("surname", Model.Surname)
+            @Html.Hidden("Name", Model.Name )
+            @Html.Hidden("Surname", Model.Surname)
             @Html.Hidden("id", Model.DoctorID)
             @Html.Hidden("returnUrl", Request.Url.PathAndQuery)
             <input type="submit" class="btn btn-success" value="Umów wizytę" />
