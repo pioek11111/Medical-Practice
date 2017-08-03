@@ -47,11 +47,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IMedicalProductsRepository.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Concrete\EFDbContext.cs" />
     <Compile Include="Concrete\EFDoctorRepository.cs" />
-    <Compile Include="Doctors.cs" />
-    <Compile Include="IDoctorsRepository.cs" />
+    <Compile Include="Concrete\EFMedicalProductsRepository.cs" />
+    <Compile Include="Entities\Doctors.cs" />
+    <Compile Include="Abstract\IDoctorsRepository.cs" />
+    <Compile Include="Entities\Medical_Products.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

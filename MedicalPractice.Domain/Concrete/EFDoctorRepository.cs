@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MedicalPractice.Domain.Entities;
 using MedicalPractice.Domain.Abstract;
+using System;
 
 namespace MedicalPractice.Domain.Concrete
 {
@@ -8,9 +9,9 @@ namespace MedicalPractice.Domain.Concrete
     {
         private EFDbContext context = new EFDbContext();
 
-        public IEnumerable<Doctor> repository
+        public IEnumerable<Doctor> DorcorRepository
         {
             get { return context.Doctors; }
-        }
+        }        
     }
 }

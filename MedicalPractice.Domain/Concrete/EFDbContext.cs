@@ -5,6 +5,7 @@ namespace MedicalPractice.Domain.Concrete
 {
     public class EFDbContext : DbContext
     {
-        public DbSet<Doctor> Doctors { get; set; } 
+        public DbSet<Doctor> Doctors { get; set; }
+        public DbSet<Medical_Products> MMedicalProducts { get; set; }
     }
 }

@@ -28,11 +28,7 @@ namespace SportsStore.WebUI.Infrastructure
         private void AddBindings()
         {
             kernel.Bind<IDoctorsRepository>().To<EFDoctorRepository>();
-            //Mock<IDoctorsRepository> mock = new Mock<IDoctorsRepository>();
-            //mock.Setup(m => m.repository).Returns(new List<Doctor> {
-            //    new Doctor { Name = "Piłka nożna", Surname = "gtew", Specjalization = "gtrwg" }
-            //});
-            //kernel.Bind<IDoctorsRepository>().ToConstant(mock.Object);
+            kernel.Bind<IMedicalProductsRepository>().To<EFMedicalProductsRepository>();
         }
     }
 }

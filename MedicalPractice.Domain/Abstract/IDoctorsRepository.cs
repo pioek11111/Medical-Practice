@@ -9,6 +9,6 @@ namespace MedicalPractice.Domain.Abstract
 {
     public interface IDoctorsRepository
     {
-        IEnumerable<Doctor> repository { get; }
+        IEnumerable<Doctor> DorcorRepository { get; }
     }
 }

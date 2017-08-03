@@ -1,0 +1,35 @@
+﻿@model MedicalPractice.Domain.Entities.Medical_Products
+
+@{
+    ViewBag.Title = "ProductSummary";
+}
+   
+<style>
+    .product {
+        width: 250px;
+        height: 290px;
+        border: 2px solid red;
+        border-radius: 15%;
+        display: inline-block;
+        margin: 10px 5px;
+    }
+    .name {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .desc {
+        text-align:justify;
+        padding: 0 15px;
+    }
+    .buttonCenter {
+        text-align: center;
+    }
+</style>
+
+<div class="product">
+    <p class="text-center name">@Model.Name</p>
+    <p class="text-center desc">@Model.Description</p>
+    <p class="text-center">@Model.Price zł</p>
+    <div class="buttonCenter"><button class="btn-primary buttonCenter" >Do koszyka</button></div>
+</div>
+

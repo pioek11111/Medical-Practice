@@ -1,5 +1,7 @@
-﻿using System;
+﻿using MedicalPractice.Domain.Concrete;
+using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -13,6 +15,7 @@ namespace MedicalPractice.WebUI
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            Database.SetInitializer<EFDbContext>(null);
         }
     }
 }
