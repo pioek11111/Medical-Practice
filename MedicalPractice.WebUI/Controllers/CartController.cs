@@ -18,7 +18,7 @@ namespace MedicalPractice.WebUI.Controllers
             repository = repo;
         }
 
-        public RedirectToRouteResult AddToCart(int productId)
+        public RedirectToRouteResult AddToCart(int productId, string returnUrl)
         {
             Medical_Products product = repository.ProductsRepository.FirstOrDefault(p => p.Medical_ProductsID == productId);
             Cart cart = GetCart();
@@ -27,7 +27,16 @@ namespace MedicalPractice.WebUI.Controllers
             {
                 cart.AddItem(product);
             }
-            return RedirectToAction("Index");
+            return RedirectToAction("Index", new { returnUrl });
+        }
+
+        public RedirectToRouteResult RemoveFromCart(int productId, string returnUrl)
+        {
+            Cart cart = GetCart();
+            
+            GetCart().RemoveItem(productId);
+            
+            return RedirectToAction("Index", new { returnUrl });
         }
 
         private Cart GetCart()
@@ -41,9 +50,9 @@ namespace MedicalPractice.WebUI.Controllers
             return cart;
         }
         // GET: Cart
-        public ViewResult Index()
+        public ViewResult Index(string returnUrl)
         {
-            return View("CartIndex", new CartIndexViewModel { Cart = GetCart() });
+            return View("CartIndex", new CartIndexViewModel { Cart = GetCart(), ReturnUrl = returnUrl });
         }
     }
 }

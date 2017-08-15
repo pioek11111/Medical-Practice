@@ -18,9 +18,9 @@ namespace MedicalPractice.Domain.Entities
             }
         }
 
-        public void RemoveItem(Medical_Products p)
+        public void RemoveItem(int p)
         {
-            listOfProducts.Remove(p);
+            listOfProducts.RemoveAll(pr => pr.Medical_ProductsID == p);
         }
 
         public decimal ComputeTotalValue()

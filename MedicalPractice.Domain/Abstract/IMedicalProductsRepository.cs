@@ -9,6 +9,6 @@ namespace MedicalPractice.Domain.Abstract
 {
     public interface IMedicalProductsRepository
     {
-        IEnumerable<Medical_Products> ProductsRepository { get;}
+        IEnumerable<Medical_Products> ProductsRepository { get; }
     }
 }

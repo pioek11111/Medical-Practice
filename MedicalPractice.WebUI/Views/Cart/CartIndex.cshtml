@@ -30,6 +30,16 @@
             <tr>
                 <td class="text-left">@line.Name</td>
                 <td class="text-right">@line.Price.ToString("c")</td>
+                <td>
+                    @using (Html.BeginForm("RemoveFromCart", "Cart"))
+                    {
+                        <div class="buttonCenter">
+                            @Html.Hidden("productId", line.Medical_ProductsID)
+                            @Html.Hidden("returnUrl", Request.Url.PathAndQuery)
+                            <input type="submit" class="btn btn-success" value="Usuń" />
+                        </div>
+                    }
+                </td>
             </tr>
         }
     </tbody>
@@ -42,6 +52,6 @@
         </tr>
     </tfoot>
 </table>
-@*<div class="text-center">
+<div class="text-center">
     <a class="btn btn-primary" href="@Model.ReturnUrl">Kontynuuj zakupy</a>
-</div>*@
+</div>

@@ -34,10 +34,8 @@
     {
         <div class="buttonCenter">
             @Html.Hidden("productId", Model.Medical_ProductsID)
-            @*@Html.HiddenFor(x => x.Medical_ProductsID)*@
-            @*@Html.Hidden("returnUrl", Request.Url.PathAndQuery)*@
+            @Html.Hidden("returnUrl", Request.Url.PathAndQuery)
             <input type="submit" class="btn btn-success" value="Dodaj do koszyka" />
-            @*<button class="btn-primary buttonCenter" >Do koszyka</button>*@
         </div>
     }
     
