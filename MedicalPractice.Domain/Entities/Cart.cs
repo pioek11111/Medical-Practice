@@ -8,6 +8,37 @@ namespace MedicalPractice.Domain.Entities
 {
     public class Cart
     {
+        private List<Medical_Products> listOfProducts = new List<Medical_Products>();
 
+        public void AddItem(Medical_Products p)
+        {
+            if(!listOfProducts.Contains(p))
+            {
+                listOfProducts.Add(p);
+            }
+        }
+
+        public void RemoveItem(Medical_Products p)
+        {
+            listOfProducts.Remove(p);
+        }
+
+        public decimal ComputeTotalValue()
+        {
+            return listOfProducts.Sum(e => e.Price);
+        }
+
+        public void Clear()
+        {
+            listOfProducts.Clear();
+        }
+
+        public IEnumerable<Medical_Products> List
+        {
+            get
+            {
+                return listOfProducts;
+            }
+        }
     }
 }

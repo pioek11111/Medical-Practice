@@ -30,6 +30,16 @@
     <p class="text-center name">@Model.Name</p>
     <p class="text-center desc">@Model.Description</p>
     <p class="text-center">@Model.Price zł</p>
-    <div class="buttonCenter"><button class="btn-primary buttonCenter" >Do koszyka</button></div>
+    @using (Html.BeginForm("AddToCart", "Cart"))
+    {
+        <div class="buttonCenter">
+            @Html.Hidden("productId", Model.Medical_ProductsID)
+            @*@Html.HiddenFor(x => x.Medical_ProductsID)*@
+            @*@Html.Hidden("returnUrl", Request.Url.PathAndQuery)*@
+            <input type="submit" class="btn btn-success" value="Dodaj do koszyka" />
+            @*<button class="btn-primary buttonCenter" >Do koszyka</button>*@
+        </div>
+    }
+    
 </div>
 

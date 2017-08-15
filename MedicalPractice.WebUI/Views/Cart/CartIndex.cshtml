@@ -1,0 +1,47 @@
+﻿@model MedicalPractice.WebUI.Models.CartIndexViewModel
+
+@{
+    ViewBag.Title = "CartIndex";
+}
+<style>
+    table {
+        align-content: center;
+        table-layout: fixed;
+        width: 70% !important;
+    }
+    tfoot {
+        background-color: palegreen;
+    }
+    
+</style>
+
+<h2>CartIndex</h2>
+
+<table class="table text-center">
+    <thead>
+        <tr>
+            <th>Produkt</th>
+            <th class="text-right">Cena</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var line in Model.Cart.List)
+        {
+            <tr>
+                <td class="text-left">@line.Name</td>
+                <td class="text-right">@line.Price.ToString("c")</td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="1" class="text-left">Razem:</td>
+            <td class="text-right">
+                @Model.Cart.ComputeTotalValue().ToString("c")
+            </td>
+        </tr>
+    </tfoot>
+</table>
+@*<div class="text-center">
+    <a class="btn btn-primary" href="@Model.ReturnUrl">Kontynuuj zakupy</a>
+</div>*@

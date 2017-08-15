@@ -1,7 +1,11 @@
 ﻿<style>
     .cart {
         background-color: green;
-        color: white;
+        color: white !important;
+    }
+    .cart:hover {
+        background-color: lightgreen;
+        color: white !important;
     }
     
 </style>
@@ -16,6 +20,6 @@
         <li><a href="#">Page 3</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
-        <li>@Html.ActionLink("Pakiety", "Index", "MedicalProducts", null, new { @class = "cart pull-right" })</li>
+        <li>@Html.ActionLink("Pakiety", "Index", "MedicalProducts", null, new { @class = "cart active" })</li>
     </ul>
 </div>
