@@ -9,6 +9,7 @@ namespace MedicalPractice.WebUI.Controllers
 {
     public class VisitOrderController : Controller
     {
+
         public RedirectToRouteResult Order(string d, string returnUrl)
         {            
             return RedirectToAction("Index", d);

@@ -6,6 +6,9 @@ using System.Linq;
 using Moq;
 using MedicalPractice.Domain.Abstract;
 using MedicalPractice.Domain.Concrete;
+using SportsStore.Domain.Concrete;
+using System.Configuration;
+using SportsStore.Domain.Abstract;
 
 namespace SportsStore.WebUI.Infrastructure
 {
@@ -29,6 +32,14 @@ namespace SportsStore.WebUI.Infrastructure
         {
             kernel.Bind<IDoctorsRepository>().To<EFDoctorRepository>();
             kernel.Bind<IMedicalProductsRepository>().To<EFMedicalProductsRepository>();
+
+            EmailSettings emailSettings = new EmailSettings
+            {
+                WriteAsFile = bool.Parse(ConfigurationManager.AppSettings["Email.WriteAsFile"] ?? "false")
+            };
+
+            kernel.Bind<IOrderProcessor>().To<EmailOrderProcessor>()
+            .WithConstructorArgument("settings", emailSettings);
         }
     }
 }

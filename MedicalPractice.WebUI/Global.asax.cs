@@ -1,4 +1,6 @@
 ﻿using MedicalPractice.Domain.Concrete;
+using MedicalPractice.Domain.Entities;
+using SportsStore.WebUI.Infrastructure.Binders;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -16,6 +18,7 @@ namespace MedicalPractice.WebUI
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             Database.SetInitializer<EFDbContext>(null);
+            ModelBinders.Binders.Add(typeof(Cart), new CartModelBinder());
         }
     }
 }

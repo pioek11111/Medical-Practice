@@ -48,14 +48,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\IMedicalProductsRepository.cs" />
+    <Compile Include="Abstract\IOrderProcessor.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Concrete\EFDbContext.cs" />
     <Compile Include="Concrete\EFDoctorRepository.cs" />
     <Compile Include="Concrete\EFMedicalProductsRepository.cs" />
+    <Compile Include="Concrete\EmailOrderProcessor.cs" />
     <Compile Include="Entities\Cart.cs" />
     <Compile Include="Entities\Doctors.cs" />
     <Compile Include="Abstract\IDoctorsRepository.cs" />
     <Compile Include="Entities\Medical_Products.cs" />
+    <Compile Include="Entities\VisitDetails.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

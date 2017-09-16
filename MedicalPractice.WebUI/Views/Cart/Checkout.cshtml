@@ -1,0 +1,24 @@
+﻿@model MedicalPractice.Domain.Entities.VisitDetails
+
+@{
+    ViewBag.Title = "Checkout";
+}
+
+<h2>Checkout</h2>
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary()
+
+    foreach (var property in ViewData.ModelMetadata.Properties)
+    {
+        <div class="form-group">
+            <label>@(property.DisplayName ?? property.PropertyName)</label>
+            @Html.TextBox(property.PropertyName, null, new { @class = "form-control" })
+        </div>
+    }
+
+    <div class="text-center">
+        <input class="btn btn-primary" type="submit" value="Zakończ zamówienie" />
+    </div>
+}
+
